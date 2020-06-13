@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: installing node
-      uses: action/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta
       with:
           node-version: 12
 
@@ -32,4 +32,4 @@ jobs:
     - name: Installing Surge
       run: npm install --global surge
     - name: deploying using surge
-      run: surge ./bootcamp2020_sample1.surge.sh --token $ {{ secrets }}
+      run: surge ./ bootcamp2020_sample1.surge.sh --token $ {{ secrets }}
