@@ -32,4 +32,4 @@ jobs:
     - name: Installing Surge
       run: npm install --global surge
     - name: deploying using surge
-      run: surge ./ jaweria_sample123.surge.sh 
+      run: surge ./ jaweria_sample123.surge.sh ${{ secrets.DEPLOY_SURGE }}
